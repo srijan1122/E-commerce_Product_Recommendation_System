@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Product Recommendations</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3Cpath d='M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48l45.5 0c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5L488 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-288.3 0c-11.5 0-21.4-8.2-23.6-19.5L170.7 288l288.5 0c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32L360 32l0 102.1 23-23c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-64 64c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l23 23L312 32 120.1 32C111 12.8 91.6 0 69.5 0L24 0zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-title">Smart Product Recommendation</div>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="/" class="home-button">Home</a>
+                <a href="/register" class="signup-button">Sign up</a>
+                <a href="/login" class="login-button">Login</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="hero">
+            <div class="powered-by-ai">Powered by AI</div>
+            <h1>Smart Product Recommendations</h1>
+            <p>Boost your sales with our advanced machine learning recommendation engine that delivers personalized
+                product suggestions to your customers.</p>
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="launch()">Launch</button>
+                <button class="btn btn-secondary" onclick="learnMore()">Learn More</button>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></i></div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Advanced machine learning algorithms analyze user behavior and preferences in real-time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>Personalized Results</h3>
+                    <p>Deliver tailored product recommendations based on individual user profiles and browsing history.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>Recommendation on search</h3>
+                    <p>Get intelligent product suggestions by searching though name of the product, enhancing discovery
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works section -->
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Data Collection</h3>
+                    <p>You enter your product name</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>ML Processing</h3>
+                    <p>Our AI models process the data to identify patterns</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Pattern Recognition</h3>
+                    <p>System recognizes user preferences and behaviors</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Recommendations</h3>
+                    <p>Personalized product suggestions are generated</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- See It In Action section -->
+        <section class="action-section">
+            <h2>See It In Action</h2>
+            <p>Experience the power of our recommendation engine. Try it now and see how it can
+                do magic.</p>
+            <button class="action-button" onclick="launch()">Launch</button>
+        </section>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                © 2024 Product Recommendation System. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>

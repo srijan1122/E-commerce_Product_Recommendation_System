@@ -68,12 +68,13 @@ def recommend_products():
     
     recommendations = train_data_df.iloc[top_indices].sort_values('rating', ascending=False)
     
-    recommend_products = recommendations[['pname', 'img', 'rating']]
+    recommend_products = recommendations[['pname', 'img', 'rating', 'plink']]
     
     data = {
         'names': recommend_products['pname'].tolist(),
         'images': recommend_products['img'].tolist(),
-        'ratings': recommend_products['rating'].tolist()
+        'ratings': recommend_products['rating'].tolist(),
+        'plinks': recommend_products['plink'].tolist()
     }
     
     return render_template('rec.html', data=data)

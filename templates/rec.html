@@ -72,10 +72,10 @@
                                 <span class="rating-value">{{ data.ratings[i] }}</span>
                             </div>
                         </div>
-                        <button class="buy-now-btn">
+                        <a href="{{ data.plinks[i] }}" target="_blank" class="buy-now-btn">
                             <i class="fas fa-shopping-cart"></i>
-                            Buy Now
-                        </button>
+                            Visit Product Page
+                        </a>
                     </div>
                 </div>
                 {% endfor %}

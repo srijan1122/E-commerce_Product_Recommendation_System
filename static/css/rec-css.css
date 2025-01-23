@@ -520,6 +520,31 @@ h1 {
     display: block;
 }
 
+.buy-now-btn {
+    gap: 8px;
+    width: 100%;
+    padding: 8px 16px;
+    border: 2px solid rgba(255, 255, 255, 0.683);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.buy-now-btn:hover {
+    background-color: var(--accent-color);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.buy-now-btn i {
+    font-size: 16px;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {
